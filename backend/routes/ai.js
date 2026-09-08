@@ -12,8 +12,9 @@ const ALLOWED_GENDERS = ["male", "female", "other"];
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'dummy_key');
 
-// Ensure user has an active membership
+// Ensure user has an active membership or is an admin
 const paidMemberGuard = (req, res, next) => {
+  if (req.user.role === 'admin') return next();
   const { membershipStatus, membershipExpiry } = req.user;
   if (membershipStatus !== 'active') return res.status(403).json({ message: 'No active membership.' });
   if (membershipExpiry && new Date(membershipExpiry) < new Date()) return res.status(403).json({ message: 'Membership expired.' });
