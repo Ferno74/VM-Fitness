@@ -31,10 +31,10 @@ function App() {
             scrolled ? 'bg-[#09090B]/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent border-b border-transparent'
           }`}
         >
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <span className="text-accent font-bold tracking-wider text-sm">VM</span>
             <span className="text-white tracking-widest text-sm">FITNESS</span>
-          </div>
+          </Link>
 
           <div className="hidden md:flex gap-8 items-center text-[13px] text-white/60">
             <Link to="/" className="hover:text-white/90 transition-opacity hover:border-b hover:border-accent pb-[1px]">Overview</Link>

@@ -99,7 +99,7 @@ export default function Plans() {
               planId: plan.id
             });
             toast.success('Subscription activated successfully. Welcome to the ecosystem.');
-            navigate('/dashboard');
+            window.location.href = '/dashboard';
           } catch (err) {
             toast.error('Verification failed. Please contact support.');
           }

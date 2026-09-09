@@ -35,7 +35,7 @@ router.get('/:id/qr', protect, adminOnly, async (req, res) => {
     const equipment = await Equipment.findById(req.params.id);
     if (!equipment) return res.status(404).json({ message: 'Equipment not found' });
 
-    const targetUrl = `${process.env.CLIENT_URL || 'http://localhost:5173'}/equipment/${equipment._id}`;
+    const targetUrl = `${process.env.CLIENT_URL || 'http://54.146.146.102'}/equipment/${equipment._id}`;
     const qrDataUrl = await QRCode.toDataURL(targetUrl, { width: 400, margin: 2, color: { dark: '#0A0A0A', light: '#FFFFFF' } });
 
     res.json({ qrDataUrl });
