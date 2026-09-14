@@ -2,7 +2,7 @@
 
 > A full-stack, production-ready gym management web application built for **VM Fitness**, Village Rajol, District Kangra, Himachal Pradesh.
 
-**Live Demo:** [http://54.146.146.102](http://54.146.146.102)  
+**Live Demo:** [htts:/vmfitness.in/](https://vmfintess.in)  
 **GitHub:** [https://github.com/Ferno74/VM-Fitness](https://github.com/Ferno74/VM-Fitness)
 
 ---
