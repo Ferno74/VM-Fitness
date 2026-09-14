@@ -11,7 +11,6 @@
 
 VM Fitness is a premium, cinematic gym web application that combines real-world gym management with cutting-edge technology. Members can browse membership plans, subscribe via Razorpay, consult an AI personal trainer powered by Google Gemini, and scan physical QR codes on gym equipment to access tutorial videos — all from a single, beautiful web platform.
 
-The visual design philosophy: **"Apple meets Sony flagship"** — ultra-clean, dark, luxury tech aesthetic.
 
 ---
 
